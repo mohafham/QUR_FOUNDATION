@@ -17,12 +17,12 @@ QUR_FOUNDATION/
 
 ## Features
 
-- 🎥 Interactive split-section with video/image hover effects
-- 💝 Donation cards with external NGO links
-- 📱 Fully responsive design
-- 🎨 Beautiful animations and transitions
-- 📧 Social media integration
-- 💼 Professional footer with contact information
+- Interactive split-section with video/image hover effects
+- Donation cards with external NGO links
+- Fully responsive design
+- Beautiful animations and transitions
+- Social media integration
+- Professional footer with contact information
 
 ## Getting Started
 
@@ -76,21 +76,3 @@ npm run build
 - CSS3 with custom animations
 - Responsive design principles
 - Modern JavaScript (ES6+)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For questions or support, please contact:
-- Email: mohafhamm@gmail.com
-- LinkedIn: mohammad-afham-975010220
-- Instagram: @ohhafham
