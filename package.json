@@ -1,0 +1,35 @@
+{
+  "name": "qur-foundation",
+  "version": "1.0.0",
+  "description": "QUR Foundation NGO Website - A comprehensive website for QUR Foundation with donation functionality and beautiful design",
+  "main": "qur/src/index.js",
+  "scripts": {
+    "start": "cd qur && npm start",
+    "build": "cd qur && npm run build",
+    "test": "cd qur && npm test",
+    "dev": "cd qur && npm start",
+    "install-deps": "cd qur && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohafham/QUR_FOUNDATION.git"
+  },
+  "keywords": [
+    "ngo",
+    "foundation",
+    "charity",
+    "donation",
+    "react",
+    "website",
+    "qur-foundation"
+  ],
+  "author": "Mohammad Afham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohafham/QUR_FOUNDATION/issues"
+  },
+  "homepage": "https://github.com/mohafham/QUR_FOUNDATION#readme",
+  "workspaces": [
+    "qur"
+  ]
+}
