@@ -1,0 +1,175 @@
+.about-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 20px 0;
+    font-family: 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background-color: #000000;
+    margin: 0 auto 30px auto;
+    border-radius: 2px;
+}
+
+.about-description {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #333333;
+    font-style: italic;
+    margin: 0;
+    letter-spacing: 0.3px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 35px 25px;
+    background: linear-gradient(145deg, #ffffff 0%, #f9f9f9 100%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    border-color: #ddd;
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 15px 0;
+    font-family: 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+.feature-description {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555555;
+    margin: 0;
+}
+
+.about-mission {
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.mission-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0 0 20px 0;
+    font-family: 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+.mission-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 15px;
+        margin-top: 40px;
+    }
+    
+    .about-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-description {
+        font-size: 20px;
+    }
+    
+    .about-features {
+        gap: 25px;
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-item {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 40px 10px;
+        margin-top: 30px;
+    }
+    
+    .about-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-description {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    
+    .feature-icon {
+        font-size: 2.8rem;
+    }
+    
+    .feature-title {
+        font-size: 1.3rem;
+    }
+    
+    .feature-description {
+        font-size: 15px;
+    }
+    
+    .feature-item {
+        padding: 25px 15px;
+    }
+}

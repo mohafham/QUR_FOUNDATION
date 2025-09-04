@@ -1,0 +1,51 @@
+.monologue-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.monologue-container {
+    max-width: 600px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.monologue-text {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .monologue-section {
+        padding: 30px 15px;
+        margin-top: 25px;
+    }
+    
+    .monologue-text {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .monologue-section {
+        padding: 25px 10px;
+        margin-top: 20px;
+    }
+    
+    .monologue-text {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,51 @@
+.quote-section {
+    background-color: #ffffff;
+    padding: 70px 10px;
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.quote-text {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .quote-section {
+        padding: 60px 15px;
+        margin-top: 40px;
+    }
+    
+    .quote-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-section {
+        padding: 40px 10px;
+        margin-top: 30px;
+    }
+    
+    .quote-text {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}

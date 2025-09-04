@@ -1,0 +1,158 @@
+.split-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.split-left, .split-right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.section-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.overlay-text {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    z-index: 2;
+    opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-text.active {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.right-overlay-text {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    z-index: 2;
+    opacity: 0.7;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.right-overlay-text.active {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05);
+}
+
+.section-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.section-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.section-video::-webkit-media-controls-overlay-play-button {
+    display: none !important;
+}
+
+.section-video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+
+.section-video[controls] {
+    display: none !important;
+}
+
+.section-video.active {
+    opacity: 1;
+}
+
+.split-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%; /* Adjusted from 35% to 25% to move face higher */
+    opacity: 0.7;
+    transition: all 0.5s ease;
+    transform-origin: center center;
+}
+
+.section-image.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Add a container for better image control */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Removed container backgrounds for better visibility */
+.donate-button {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 36px;
+    font-size: 1rem;
+    font-family: 'bold', sans-serif;
+    background: transparent;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+    z-index: 10;
+    border-radius: 0;
+}
+
+.donate-button:hover {
+    background: transparent;
+    color: whitesmoke;
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
